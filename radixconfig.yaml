@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: smailandstuff
+  name: pmkv-smail
 spec:
   build:
     secrets:
@@ -11,7 +11,7 @@ spec:
       build:
         from: master
   components:
-    - name: pmkv-smail
+    - name: webapp
       src: .
       ports:
        - name: http
